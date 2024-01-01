@@ -48,18 +48,16 @@ File sharing and permissions is an essential in almost any business structure. T
 
 <p>
   <ul>
-    <li>Go to the Client VM and navigate to the shared folder through <b>File Explorer</b> and typing <b>\\dc-1</b></li>
-    <ul>
-      <li><img src ="https://github.com/ColtonTrauCC/network-fileshare/assets/147654000/3144b792-b6bf-4f27-b798-d2d8256308ff" width = 80% height = 80%/></li>
-    </ul>
-    <li>Attempt to access the folders through the Client VM; the only one that should be inaccessible by how the permissions are set should be <b>no_access</b></li>
-    <ul>
-      <li><img src ="https://github.com/ColtonTrauCC/network-fileshare/assets/147654000/bbc34c03-d505-43b9-aadc-9b3b73db65be" width = 80% height = 80%/></li>
-    </ul>
-  </ul>
-</p>
+    <li>Now if we go to the Client VM and navigate to the shared folder through <b>File Explorer</b> and typing <b>\\dc1</b> we should see all the files we shared while connected to DC1</li>
+
 <p align="center">
-<img src="" height = 20% width = 40%/>
+<img src="https://github.com/joshuafinchCC/fileshares-permissions/assets/155266044/68afc6f0-640b-4e57-be9e-42ecec749d1f" height = 40% width = 60%/>
+</p>
+    
+<li>Attempt to access all the folders through the Client VM; the only one that should be inaccessible right now based on our permissions is the <b>no_access</b> folder</li>
+  
+<p align="center">
+<img src="https://github.com/joshuafinchCC/fileshares-permissions/assets/155266044/a4be932d-5af0-4fd3-93d5-ed4c908e500b" height = 40% width = 60%/>
 </p>
     
 <br/>
