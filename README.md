@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/ColtonTrauCC/network-fileshare/assets/147654000/efe94bff-a469-4342-a4c6-e927befd13b9" height = 20% width = 20%/>
+<img src="https://github.com/joshuafinchCC/fileshares-permissions/assets/155266044/db2225be-e303-4d4e-98a7-ff3ee9cbdffd" height = 20% width = 40%/>
 </p>
 
 <h1 align = "center">Network Fileshare and Permissions in Active Directory</h1>
