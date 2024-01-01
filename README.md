@@ -2,8 +2,8 @@
 <img src="https://github.com/joshuafinchCC/fileshares-permissions/assets/155266044/db2225be-e303-4d4e-98a7-ff3ee9cbdffd" height = 20% width = 40%/>
 </p>
 
-<h1 align = "center">Network Fileshare and Permissions in Active Directory</h1>
-File sharing and permission set up is an essential in a business structure in order to organize resources and make sure users have the appropriate permissions and access to files they need. This lab demonstrates how file sharing and permissions work in the Active Directory domain. This lab assumes you have fully installed and configured Active Directory on a Domain Controller in a virtual machine as well as set connection with a Client virtual machine, the tutorial can be found <a href = "https://github.com/joshuafinchCC/Activedirectory-config">Active Directory Setup</a>.
+<h1 align = "center">Network Fileshare and Permissions Within Active Directory</h1>
+File sharing and permissions is an essential in almost any business structure. This allows us to organize resources and make sure users have the appropriate permissions and access to files they need, while also preventing users from accessing/editing files they shouldn't. This guide demonstrates how file sharing and permissions work within an Active Directory domain. Here is a complete guide to <a href = "https://github.com/joshuafinchCC/Activedirectory-config">Active Directory Setup</a>.
 
 <br />
 
@@ -30,19 +30,16 @@ File sharing and permission set up is an essential in a business structure in or
 
 <p>
   <ul>
-    <li>Have your Domain Controller VM connect and log in as an admin (<b>mydomain.com\jane_admin</b>) and have your Client VM connect and log in as a random user generated through the powershell script during configuration</li>
-    <li>In the Domain Controller VM, create the four folders below in the C:\ Drive and set the <b>Permissions</b> in these folders (by opening the folder's <b>Properties</b> and click on <b>Share</b> under the Sharing tab)</li>
+    <li>Log into <b>DC1</b>as an administrator account. Log into <b>Client1</b> as any newly created user (in this case myportfolio.com\employee)</li>
+    <li>Within the Domain Controller VM, create the four folders below in the C:\ Drive and set the <b>Permissions</b> (right click ->Properties-> Share->Domain Users/Domain Admins->Add) in these folders as follows:</li>
     <ul>
       <li><b>read_access</b> - add the group Domain Users and set Permissions to Read</li>
       <li><b>write_access</b> - add the group Domain Users and set Permissions to Read/Write</li>
       <li><b>no_access</b> - add the group Domain Admins and set Permissions to Read/Write</li>
       <li><b>accounting</b> - skipped for now</li>
-    </ul>
-    <li>Example of setting group and permissions for read_access</li>
-    <ul>
-      <li><img src ="https://github.com/ColtonTrauCC/network-fileshare/assets/147654000/0942d01d-f85f-4b10-a257-f399c3fc5e26" width = 80% height = 80%/></li>
-    </ul>
-  </ul>
+    
+ <p align="center">
+<img src="https://github.com/joshuafinchCC/fileshares-permissions/assets/155266044/8e38a3f2-884c-435d-84fe-79bb31781c29" height = 40% width = 80%/>
 </p>
 
 <br/>
@@ -61,7 +58,10 @@ File sharing and permission set up is an essential in a business structure in or
     </ul>
   </ul>
 </p>
-
+<p align="center">
+<img src="" height = 20% width = 40%/>
+</p>
+    
 <br/>
 
 <h3>Creating the "ACCOUNTANTS" Security Group</h3>
@@ -89,5 +89,10 @@ File sharing and permission set up is an essential in a business structure in or
     <li>Sign back into the Client VM with user you made part of the ACCOUNTANTS group and it should now have access to the accounting folder</li>
   </ul>
 </p>
+
+<p align="center">
+<img src="" height = 20% width = 40%/>
+</p>
+    
 
 <br/>
