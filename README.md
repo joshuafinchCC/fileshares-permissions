@@ -66,30 +66,29 @@ File sharing and permissions is an essential in almost any business structure. T
 
 <p>
   <ul>
-    <li>Head back to the Domain Controller VM, go to the Server Manager Board and go to <b>Active Directory Users and Computers</b> and create a new <b>Organizational Unit (OU)</b> and name it "_SECURITY_GROUP."</li>
-    <ul>
-      <li><img src = "https://github.com/ColtonTrauCC/network-fileshare/assets/147654000/af27e138-36de-44b0-85e9-a2b37088d496" width = 80% height = 80%/></li>
-    </ul>
+    <li>Head back to DC1, navigate to <b>Active Directory Users and Computers</b> and create a new <b>Organizational Unit (OU)</b>. name it "_SECURITY_GROUP"</li>
     <li>Inside the OU, create a <b>Group</b> and name it "ACCOUNTANTS"</li>
-    <ul>
-      <li><img src = "https://github.com/ColtonTrauCC/network-fileshare/assets/147654000/12e4bde2-5aad-4981-b1b9-4fe847355b1c" width = 80% height = 80%/></li>
-    </ul>
-    <li>Locate the <b>accounting</b> folder created in C:\ Drive and add the ACCOUNTANTS group and set its permissions to Read/Write</li>
-    <ul>
-      <li><img src = "https://github.com/ColtonTrauCC/network-fileshare/assets/147654000/567b094a-da96-49aa-ba2f-9f70d9c26844" width = 80% height = 80%/></li>
-    </ul>
-    <li>The user logged in the Client VM should not have access to the accounting folder since it's not part of the Group. Log off the Client VM and remember the username you used to log in to the Client as it's going to be set as part of the ACCOUNTANTS group</li>
-    <li>In the Domain Controller VM, go to the _SECURITY_GROUP OU,  right click on the ACCOUNTANTS to open up <b>Properites</b>, go to the <b>Members</b> tab and add the user as a member of the Group</li>
-    <ul>
-      <li>In this example, the user "ban.doh" is used</li>
-      <li><img src = "https://github.com/ColtonTrauCC/network-fileshare/assets/147654000/9ccc7a04-e3eb-4145-8485-2431280b86e7" width = 80% height = 80%/></li>
-    </ul>
-    <li>Sign back into the Client VM with user you made part of the ACCOUNTANTS group and it should now have access to the accounting folder</li>
-  </ul>
-</p>
 
 <p align="center">
-<img src="" height = 20% width = 40%/>
+<img src="https://github.com/joshuafinchCC/fileshares-permissions/assets/155266044/82d7b8a9-9572-46eb-b48c-79c8a7c2b879" height = 40% width = 60%/>
+</p>
+   
+<li>Locate the <b>accounting</b> folder created in C:\ Drive and add the ACCOUNTANTS group and set its permissions to Read/Write</li>
+
+<p align="center">
+<img src="https://github.com/joshuafinchCC/fileshares-permissions/assets/155266044/c47942c1-dba6-4520-8c68-1f801a615c47" height = 460% width = 80%/>
+</p>
+    
+  <li>Our employee logged in the Client VM should not have access to the accounting folder since they are not part of the ACCOUNTANTS group yet</li>
+  <li>In the Domain Controller VM, go to the _SECURITYGROUP OU,  right click on the ACCOUNTANTS to open up <b>Properites</b>, go to the <b>Members</b> tab and add the user you created as a member of the ACCOUNTANTS group</li>
+
+<p align="center">
+<img src="https://github.com/joshuafinchCC/fileshares-permissions/assets/155266044/9430ccbc-aad9-4d3a-8e93-b7dffdc2e3e8" height = 50% width = 60%/>
+</p>
+      
+<li>Sign back into the Client VM with our employee now in the ACCOUNTANTS group and it should now have access to the accounting folder</li>
+<p align="center">
+<img src="https://github.com/joshuafinchCC/fileshares-permissions/assets/155266044/a4e49a72-c3a6-44a1-bac6-f021515c3720" height = 40% width = 70%/>
 </p>
     
 
